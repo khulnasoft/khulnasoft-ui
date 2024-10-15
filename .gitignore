@@ -1,0 +1,12 @@
+.DS_Store
+.vscode/
+.jest-test-results.json
+.jest-tmp
+.idea
+node_modules
+public
+lib
+coverage/
+dist
+coverage
+storybook-static/
