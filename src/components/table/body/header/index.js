@@ -18,7 +18,7 @@ const HeaderGroup = ({ id, headers, testPrefix, rowReverse, ...rest }) => {
   return (
     <Flex
       id={id}
-      data-testid={`netdata-table-headRow${testPrefix}`}
+      data-testid={`khulnasoft-table-headRow${testPrefix}`}
       flex
       background="tableRowBg2"
       rowReverse={rowReverse}
