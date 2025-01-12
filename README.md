@@ -6,7 +6,7 @@ design system. KhulnaSoft UI is written in [Vue.js](https://vuejs.org) and its o
 - Create reusable UI components to accelerate frontend development.
 - Create UI consistency for all components within KhulnaSoft.
 
-See <https://gitlab-org.gitlab.io/khulnasoft-ui/> for documentation.
+See <https://khulnasoft.github.io/khulnasoft-ui/> for documentation.
 
 ## Usage
 
