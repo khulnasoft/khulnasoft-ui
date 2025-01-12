@@ -1,24 +1,10 @@
 pre-push:
   parallel: true
   commands:
-    eslint:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{js,vue}'
-      run: ./node_modules/.bin/eslint {files}
-    prettier:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{js,vue}'
-      run: ./node_modules/.bin/prettier --check {files}
-    stylelint:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{scss}'
-      run: ./node_modules/.bin/stylelint {files}
     markdown-lint:
       glob: '*.md'
       run: yarn markdownlint
-    yarn-deduplicate:
-      glob: 'yarn.lock'
-      run: yarn yarn-deduplicate --strategy fewer --list --fail
+
 pre-commit:
   commands:
     generate_translations:

@@ -10,7 +10,7 @@ KhulnaSoft has its own SVG icons library, explore it here: <https://gitlab-org.g
 
 ## How can I import icons from KhulnaSoft SVGs into KhulnaSoft UI components?
 
-In most circumstances, you can utilize the [icon](https://gitlab-org.gitlab.io/khulnasoft-ui/?path=/story/base-icon--default)
+In most circumstances, you can utilize the [icon](https://khulnasoft.github.io/khulnasoft-ui/?path=/story/base-icon--default)
 component to render an SVG from the gitlab-svgs library. ECharts components, however,
 cannot use SVG sprite references and require the entire `path` content to be
 passed in via config options. For now, we are hard-coding these in [svg_paths.js](src/utils/svgs/svg_paths.js),
