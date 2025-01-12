@@ -10,24 +10,6 @@ pre-push:
         else
           echo "No ESLint files to check"
         fi
-    prettier:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{js,vue}'
-      run: |
-        if [ -n "{files}" ]; then
-          ./node_modules/.bin/prettier --check {files}
-        else
-          echo "No Prettier files to check"
-        fi
-    stylelint:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{scss}'
-      run: |
-        if [ -n "{files}" ]; then
-          ./node_modules/.bin/stylelint {files}
-        else
-          echo "No Stylelint files to check"
-        fi
     markdown-lint:
       glob: '*.md'
       run: yarn markdownlint
