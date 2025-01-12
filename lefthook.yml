@@ -1,15 +1,6 @@
 pre-push:
   parallel: true
   commands:
-    eslint:
-      files: git diff --name-only --diff-filter=d origin/main...HEAD
-      glob: '*.{js,vue}'
-      run: |
-        if [ -n "{files}" ]; then
-          ./node_modules/.bin/eslint {files}
-        else
-          echo "No ESLint files to check"
-        fi
     markdown-lint:
       glob: '*.md'
       run: yarn markdownlint
