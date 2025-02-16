@@ -1,8 +1,0 @@
-default: true,
-line-length:
-  line_length: 104
-  headings: false
-  tables: false
-first-line-heading: false
-no-inline-html: false
-no-space-in-code: false
